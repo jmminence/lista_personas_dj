@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Detalle de {{ persona.nombre }}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="mb-4">Detalle de {{ persona.nombre }}</h1>
+    <div class="card bg-light text-dark">
+        <div class="card-body">
+            <h5 class="card-title">Información Personal</h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Sexo:</strong> {{ persona.get_sexo_display }}</li>
+                <li class="list-group-item"><strong>Edad:</strong> {{ persona.edad }}</li>
+                <li class="list-group-item"><strong>Altura:</strong> {{ persona.altura }} cm</li>
+                <li class="list-group-item"><strong>Peso:</strong> {{ persona.peso }} kg</li>
+                <li class="list-group-item"><strong>Cintura:</strong> {{ persona.cintura }} cm</li>
+                <li class="list-group-item"><strong>Abdomen:</strong> {{ persona.abdomen }} cm</li>
+            </ul>
+        </div>
+    </div>
+    <a href="{% url 'lista_personas' %}" class="btn btn-primary mt-3">Volver a la lista</a>
+</div>
+{% endblock %}

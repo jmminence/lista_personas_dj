@@ -1,0 +1,51 @@
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de log
+*.log
+
+# Archivos de compilación
+/build/
+/dist/
+
+# Dependencias
+/node_modules/
+/vendor/
+
+# Archivos de entorno
+.env
+venv/
+
+# Archivos de IDE
+.vscode/
+.idea/
+
+# Archivos de configuración
+config.json
+config.yaml
+config.yml
+
+# Archivos de datos
+data.csv
+data.json
+
+# Archivos de configuración de Django
+*.sqlite3
+*.sqlite
+*.db
+*.db3
+
+# Archivos de configuración de Django
+*.sqlite3
+*.sqlite   
+*.db
+*.db3
+
+# Archivos de configuración de Django
+*.sqlite3
+*.sqlite   
+*.db
+*.db3
+
+
